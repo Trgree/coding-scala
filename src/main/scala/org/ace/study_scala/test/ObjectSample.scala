@@ -12,8 +12,12 @@ object ObjectSample {
     new Color(green = 2)
     new Color2(20)
     new Color2(Array(1,2))
+
+    print(F(1,2))
   }
 }
+
+case class F(a:Int,b:Int)  //默认为val,重写了toString
 
 // 有默认参数时，部分参数可不填
 class Color(val red:Int = 10, val green:Int = 100 ) {

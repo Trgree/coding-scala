@@ -68,7 +68,7 @@ object Func_examples {
   addone(3)                                       //> res10: Int = 4
   addone2(2)                                      //> res11: Int = 3
 
-  // 偏应用函数
+
   def log(date: Date, msg: String) = println(date + "----" + msg)
                                                   //> log: (date: java.util.Date, msg: String)Unit
   val date = new Date                             //> date  : java.util.Date = Sun Jul 23 00:09:15 CST 2017
