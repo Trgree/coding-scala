@@ -18,10 +18,12 @@ object ApplySample {
 }
 
 class Goo{
-  def apply() =println("class apply")
+  import Goo._
+  def apply() =println("class apply" + a)
 }
 
 object Goo{
+  val a:Int = 0
   def apply()={
     println("object apply")
     new Goo

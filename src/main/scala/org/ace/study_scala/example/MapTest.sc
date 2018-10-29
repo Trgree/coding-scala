@@ -18,5 +18,8 @@ object MapTest {
                                                   //| f, 7 -> g)
  // -多个
  m -- List(1,2,3)                                 //> res7: scala.collection.immutable.Map[Int,String] = Map()
- println(m)                                       //> Map(1 -> a, 2 -> b)
+ println(m)
+
+  var m4 = Map((1,2),(1,"3"))
+
 }

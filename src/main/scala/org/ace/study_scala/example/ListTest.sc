@@ -6,7 +6,8 @@ object ListTest {
   var empty = Nil                                 //> empty  : scala.collection.immutable.Nil.type = List()
   var g = List()                                  //> g  : List[Nothing] = List()
   var f = 1 :: 2 :: 3 :: Nil                      //> f  : List[Int] = List(1, 2, 3)
-  
+  f  = 1 :: g
+
   a(1)                                            //> res0: Int = 2
   
   // 添加元素

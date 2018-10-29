@@ -5,7 +5,7 @@ import java.util.Date
 object Func_examples {
   def hello(name: String): String = {
     s"Hello ${name}"
-  }                                               //> hello: (name: String)String
+  }                                               //> Hello: (name: String)String
   hello("ace")                                    //> res0: String = Hello ace
 
   def hello2(name: String) = { // 自动识别返回值类型
@@ -29,8 +29,13 @@ object Func_examples {
 
   def operate3(f: (String) => String, v: String) = {
     f(v)
-  }                                               //> operate3: (f: String => String, v: String)String
+  }
+  operate(add)
+  operate((a, b) => a+b)
+
+  //> operate3: (f: String => String, v: String)String
   operate2(hello3) //输入参数是hello3,而不是hello3()      //> res3: String = Hello ace2
+  operate2(s => s"Hello2 ${s}")
   operate3(hello3, "haha")                        //> res4: String = Hello haha
 
   def apply(f: Int => String, v: Int) = f(v)      //> apply: (f: Int => String, v: Int)String
