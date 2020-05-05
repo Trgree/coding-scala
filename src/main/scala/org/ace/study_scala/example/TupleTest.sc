@@ -1,4 +1,3 @@
-package org.ace
 
 object TupleTest {
   (1,2)     // Pair                               //> res0: (Int, Int) = (1,2)
